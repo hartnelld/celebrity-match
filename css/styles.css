@@ -2,6 +2,7 @@
   padding-left: 0px;
 }
 
-#results {
+#results,
+mark {
   display: none;
 }
