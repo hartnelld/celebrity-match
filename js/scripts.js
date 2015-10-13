@@ -7,6 +7,8 @@ $(function() {
 
     // Validate input
 
+
+
     // Identify celebrity
     if (gender === "Male") {
       if (age <= 35) {
@@ -42,7 +44,7 @@ $(function() {
     // This code is far more readable
     // The previous code was written while troubleshooting
     // Turns out variable.length is != variable.length()
-    
+
     //   } else if () {
     //     var celebrity = "Annalise Basso";
     //     var celebURL = ("http://ia.media-imdb.com/images/M/MV5BMTkwMDQzNjIxNl5BMl5BanBnXkFtZTgwMTQ4OTU2NDE@._V1_UY317_CR9,0,214,317_AL_.jpg");
@@ -71,6 +73,8 @@ $(function() {
     // Hide #questions and show #results
     $("#questions").hide();
     $("#results").show();
+    $("#celeb-pic").append("<img src='" + celebURL + "'>");
+    $("#celeb-pic").fadeIn("slow");
     $("mark").fadeIn("slow");
 
     // Prevent default action when submit event occurs
